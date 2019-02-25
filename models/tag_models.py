@@ -205,7 +205,7 @@ class Tagger(object):
 
 		output = Dense(self.n_classes, activation='softmax', name='dense')(lstm)
 
-		# Build model
+		# Build the model
 		model = Model(inputs=[X_in] + A_in, outputs=output)
 		if self.initial_weight:
 			model.load_weights(self.initial_weight)
