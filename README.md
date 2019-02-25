@@ -8,7 +8,7 @@ pip install -r ./requirements.txt
 
 ## Run a sample 
 
-#####  To check if you have the proper dependencies and see a sample output, simply run `main.py`. The results (including the predicted labels and the evaluation performance) will be saved in the directory results/{model settings}.
+To check if you have the proper dependencies and see a sample output, simply run `main.py`. The results (including the predicted labels and the evaluation performance) will be saved in the directory results/{model settings}.
 
 ## Run your own tagger
 Please follow the steps below to run your own model:
