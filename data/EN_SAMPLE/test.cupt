@@ -1,0 +1,105 @@
+# global.columns = ID FORM LEMMA UPOS XPOS FEATS HEAD DEPREL DEPS MISC PARSEME:MWE
+# source_sent_id = . . 2799
+# text = For example, you can filter for the top or bottom 25 % of salespeople based on the number of orders handled.
+1	For	for	ADV	_	_	6	advmod	_	_	*
+2	example	example	NOUN	_	_	1	fixed	_	SpaceAfter=No	*
+3	,	,	PUNCT	Comma	_	1	punct	_	_	*
+4	you	you	PRON	PERS-P2	_	6	nsubj	_	_	*
+5	can	can	AUX	PRES-AUX	_	6	aux	_	_	*
+6	filter	filter	VERB	INF	_	0	root	_	_	*
+7	for	for	ADP	_	_	13	case	_	_	*
+8	the	the	DET	DEF	_	12	det	_	_	*
+9	top	top	NOUN	SG-NOM	_	12	compound	_	_	*
+10	or	or	CCONJ	_	_	11	cc	_	_	*
+11	bottom	bottom	NOUN	SG-NOM	_	9	conj	_	_	*
+12	25	25	NUM	CARD-PL	_	13	nummod	_	_	*
+13	%	%	NOUN	NOM	_	6	obl	_	_	*
+14	of	of	ADP	_	_	15	case	_	_	*
+15	salespeople	salespeople	NOUN	PL-NOM	_	13	nmod	_	_	*
+16	based	base	VERB	PASS	_	6	advcl	_	_	1:IAV
+17	on	on	ADP	_	_	19	case	_	_	1
+18	the	the	DET	DEF	_	19	det	_	_	*
+19	number	number	NOUN	SG-NOM	_	16	obl	_	_	*
+20	of	of	ADP	_	_	21	case	_	_	*
+21	orders	order	NOUN	PL-NOM	_	19	nmod	_	_	*
+22	handled	handle	VERB	PASS	_	21	amod	_	SpaceAfter=No	*
+23	.	.	PUNCT	Period	_	6	punct	_	_	*
+
+# source_sent_id = . . 2802
+# text = Each filter you apply is added to the ones you already have in effect.
+1	Each	each	DET	TOT-SG	_	2	det	_	_	*
+2	filter	filter	NOUN	SG-NOM	_	6	nsubj:pass	_	_	1:LVC.full
+3	you	you	PRON	PERS-P2	_	4	nsubj	_	_	*
+4	apply	apply	VERB	PRES	_	2	acl:relcl	_	_	1
+5	is	be	AUX	PRES-AUX	_	6	aux	_	_	*
+6	added	add	VERB	PASS	_	0	root	_	_	*
+7	to	to	ADP	_	_	9	case	_	_	*
+8	the	the	DET	DEF	_	9	det	_	_	*
+9	ones	one	PRON	IND-PL-NOM	_	6	obl	_	_	*
+10	you	you	PRON	PERS-P2	_	12	nsubj	_	_	*
+11	already	already	ADV	_	_	6	advmod	_	_	*
+12	have	have	VERB	PRES	_	9	acl:relcl	_	_	*
+13	in	in	ADP	_	_	14	case	_	_	*
+14	effect	effect	NOUN	SG-NOM	_	12	obl	_	SpaceAfter=No	*
+15	.	.	PUNCT	Period	_	6	punct	_	_	*
+
+# source_sent_id = . . 2509
+# text = If the Dursleys wake up, I'm dead, said Harry as he tied the rope tightly around a bar and Fred revved up the car.
+1	If	if	SCONJ	_	_	4	mark	_	_	*
+2	the	the	DET	DEF	_	3	det	_	_	*
+3	Dursleys	dursley	PROPN	PL-NOM	_	4	nsubj	_	_	*
+4	wake	wake	VERB	PRES	_	9	advcl	_	_	2:VPC.semi
+5	up	up	ADV	_	_	4	compound:prt	_	SpaceAfter=No	2
+6	,	,	PUNCT	Comma	_	4	punct	_	_	*
+7	I	I	PRON	PERS-P1SG-NOM	_	9	nsubj	_	SpaceAfter=No	*
+8	'm	be	AUX	PRES	_	9	cop	_	_	*
+9	dead	dead	ADJ	POS	_	11	xcomp	_	SpaceAfter=No	*
+10	,	,	PUNCT	Comma	_	8	punct	_	_	*
+11	said	say	VERB	PAST	_	0	root	_	_	*
+12	Harry	harry	PROPN	SG-NOM	_	11	nsubj	_	_	*
+13	as	as	SCONJ	_	_	15	mark	_	_	*
+14	he	he	PRON	PERS-P3SG-NOM	_	15	nsubj	_	_	*
+15	tied	tie	VERB	PAST	_	11	advcl	_	_	*
+16	the	the	DET	DEF	_	17	det	_	_	*
+17	rope	rope	NOUN	SG-NOM	_	15	obj	_	_	*
+18	tightly	tightly	ADV	_	_	15	advmod	_	_	*
+19	around	around	ADP	_	_	21	case	_	_	*
+20	a	a	DET	IND-SG	_	21	det	_	_	*
+21	bar	bar	NOUN	SG-NOM	_	15	obl	_	_	*
+22	and	and	CCONJ	_	_	24	cc	_	_	*
+23	Fred	fred	PROPN	SG-NOM	_	24	nsubj	_	_	*
+24	revved	rev	VERB	PAST	_	15	conj	_	_	1:VPC.full
+25	up	up	ADV	_	_	24	compound:prt	_	_	1
+26	the	the	DET	DEF	_	27	det	_	_	*
+27	car	car	NOUN	SG-NOM	_	24	obj	_	SpaceAfter=No	*
+28	.	.	PUNCT	Period	_	11	punct	_	_	*
+
+# source_sent_id = . . 2517
+# text = You had to hand it to them, thought Harry, as George took an ordinary hairpin from his pocket and started to pick the lock.
+1	You	you	PRON	PERS-P2	_	4	nsubj	_	_	*
+2	had	have	AUX	PAST-AUX	_	4	aux	_	_	*
+3	to	to	PART	_	_	4	mark	_	_	*
+4	hand	hand	VERB	INF	_	9	xcomp	_	_	1:VID
+5	it	it	PRON	PERS-SG	_	4	obj	_	_	1
+6	to	to	ADP	_	_	7	case	_	_	1
+7	them	they	PRON	PERS-P3PL-ACC	_	4	obl	_	SpaceAfter=No	1
+8	,	,	PUNCT	Comma	_	4	punct	_	_	*
+9	thought	think	VERB	PAST	_	0	root	_	_	*
+10	Harry	harry	PROPN	SG-NOM	_	9	nsubj	_	SpaceAfter=No	*
+11	,	,	PUNCT	Comma	_	14	punct	_	_	*
+12	as	as	SCONJ	_	_	14	mark	_	_	*
+13	George	george	PROPN	SG-NOM	_	14	nsubj	_	_	*
+14	took	take	VERB	PAST	_	9	advcl	_	_	*
+15	an	an	DET	IND-SG	_	17	det	_	_	*
+16	ordinary	ordinary	ADJ	POS	_	17	amod	_	_	*
+17	hairpin	hairpin	NOUN	SG-NOM	_	14	obj	_	_	*
+18	from	from	ADP	_	_	20	case	_	_	*
+19	his	he	PRON	P3SG-GEN	_	20	nmod:poss	_	_	*
+20	pocket	pocket	NOUN	SG-NOM	_	14	obl	_	_	*
+21	and	and	CCONJ	_	_	24	cc	_	_	*
+22	started	start	VERB	PAST	_	24	aux	_	_	*
+23	to	to	PART	_	_	24	mark	_	_	*
+24	pick	pick	VERB	INF	_	14	conj	_	_	*
+25	the	the	DET	DEF	_	26	det	_	_	*
+26	lock	lock	NOUN	SG-NOM	_	24	obj	_	SpaceAfter=No	*
+27	.	.	PUNCT	Period	_	9	punct	_	_	*
