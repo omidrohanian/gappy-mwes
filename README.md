@@ -67,3 +67,21 @@ In the interest of readability, we provide an overview of the structure of our p
 ### TL;DR
 
 If you only care about the model architecture, have a look at `./models/tag_models`. Self-attention and GCN are defined in the separate file `./models/layers.py`.
+
+### Reference
+
+@article{Rohanian2019,
+  author    = {Omid Rohanian and
+               Shiva Taslimipoor and
+               Samaneh Kouchaki and
+               Le An Ha and
+               Ruslan Mitkov},
+  title     = {Bridging the Gap: Attending to Discontinuity in Identification of
+               Multiword Expressions},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1902.10667},
+  archivePrefix = {arXiv},
+  eprint    = {1902.10667},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-10667},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
