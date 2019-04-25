@@ -69,7 +69,7 @@ In the interest of readability, we provide an overview of the structure of our p
 If you only care about the model architecture, have a look at `./models/tag_models`. Self-attention and GCN are defined in the separate file `./models/layers.py`.
 
 ### Reference
-
+```
 @article{Rohanian2019,
   author    = {Omid Rohanian and
                Shiva Taslimipoor and
@@ -85,3 +85,4 @@ If you only care about the model architecture, have a look at `./models/tag_mode
   biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-10667},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+```
