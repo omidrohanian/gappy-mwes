@@ -22,23 +22,13 @@ class Train_Test():
 		self.data = data
 		self.w2v = self.data.word2vec_dir
 
-	def train(self, epoch, batch_size):
 		# preparing the name for the folder results corresponding to the name of the model, settings and language.
-		if self.data.testORdev == "DEV":
-			if self.data.depAdjacency_gcn:
-				self.res_dir="./results/DEV_{}".format(self.data.lang)+"_GCN_"+self.tagger_name+"_results_{}".format(epoch)
-			else:
-				self.res_dir="./results/DEV_{}".format(self.data.lang)+"_"+self.tagger_name+"_results_{}".format(epoch)
-			if self.w2v:
-				self.res_dir = self.res_dir.split('_results')[0]+"w2v"+"_results"
-		else:
-			if self.data.depAdjacency_gcn:
-				self.res_dir="./results/{}".format(self.data.lang)+"_GCN_"+self.tagger_name+"_results_{}".format(epoch)
-			else:
-				self.res_dir="./results/{}".format(self.data.lang)+"_"+self.tagger_name+"_results_{}".format(epoch)
-
+		self.res_dir = "./results/" + self.data.testORdev + "_{}".format(self.data.lang)+self.tagger_name+"_results"
 		if not os.path.exists(self.res_dir):
 			os.makedirs(self.res_dir)
+
+	def train(self, epoch, batch_size):
+		
 		filepath = self.res_dir + "/weights-improvement-{epoch:02d}-{acc:.2f}.hdf5"
 		checkpoint = ModelCheckpoint(filepath, monitor='acc', verbose=1, save_best_only=True, mode='max', period=10, save_weights_only=True)
 		callbacks_list = [checkpoint]

@@ -160,21 +160,10 @@ class SpectralGraphConvolution(Layer):
         A = inputs[1:]  # Shapes: (None, num_nodes, num_nodes)
 
         eye = A[0] * K.zeros(self.num_nodes, dtype='float32') + K.eye(self.num_nodes, dtype='float32')
-
-        # eye = K.eye(self.num_nodes, dtype='float32')
-
+        #eye = K.eye(self.num_nodes, dtype='float32')
         if self.consecutive_links:
-            #shifted = tf.manip.roll(eye, shift=1, axis=0)
-            #shifted = tf.roll(eye, shift=1, axis=0)
-            #shifted = roll(eye, shift=1, axis=0)
-            #####################################################
             eye_len = eye.get_shape().as_list()[0] 
-            #shifted = tf.concat((eye, eye), axis=0)
-            #shifted = tf.concat((eye[eye_len-1: , :], eye[:eye_len-1 , :]), axis=0)
             shifted = tf.concat((eye[-1: , :], eye[:-1 , :]), axis=0)
-
-            #####################################################
-
             A.append(shifted)
 
         if self.backward_links:
@@ -200,14 +189,11 @@ class SpectralGraphConvolution(Layer):
 
     def get_config(self):
         config = {'output_dim': self.output_dim,
-                  'init': self.init.__name__,
                   'activation': self.activation.__name__,
                   'W_regularizer': self.W_regularizer.get_config() if self.W_regularizer else None,
                   'b_regularizer': self.b_regularizer.get_config() if self.b_regularizer else None,
-                  'num_bases': self.num_bases,
-                  'bias': self.bias,
-                  'input_dim': self.input_dim}
-        base_config = super(GraphConvolution, self).get_config()
+                  'bias': self.bias}
+        base_config = super(SpectralGraphConvolution, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))
 
 
