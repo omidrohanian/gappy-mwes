@@ -70,7 +70,7 @@ If you only care about the model architecture, have a look at `./models/tag_mode
 
 ### Reference
 ```
-@article{Rohanian2019,
+@inproceedings{Rohanian2019,
   author    = {Omid Rohanian and
                Shiva Taslimipoor and
                Samaneh Kouchaki and
@@ -79,10 +79,9 @@ If you only care about the model architecture, have a look at `./models/tag_mode
   title     = {Bridging the Gap: Attending to Discontinuity in Identification of
                Multiword Expressions},
   year      = {2019},
-  url       = {http://arxiv.org/abs/1902.10667},
-  archivePrefix = {arXiv},
-  eprint    = {1902.10667},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1902-10667},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  booktitle = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
+  url       = {https://www.aclweb.org/anthology/N19-1275/},
+  pages = "2692--2698",
+  abstract = "We introduce a new method to tag Multiword Expressions (MWEs) using a linguistically interpretable language-independent deep learning architecture. We specifically target discontinuity, an under-explored aspect that poses a significant challenge to computational treatment of MWEs. Two neural architectures are explored: Graph Convolutional Network (GCN) and multi-head self-attention. GCN leverages dependency parse information, and self-attention attends to long-range relations. We finally propose a combined model that integrates complementary information from both, through a gating mechanism. The experiments on a standard multilingual dataset for verbal MWEs show that our model outperforms the baselines not only in the case of discontinuous MWEs but also in overall F-score."
 }
 ```
