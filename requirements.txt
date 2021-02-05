@@ -1,6 +1,6 @@
 Keras==2.2.4
 gensim==3.4.0
 h5py==2.7.1
-nltk==3.3
+nltk==3.4.5
 numpy==1.14.3
 tensorflow==1.9.0
